@@ -1,0 +1,52 @@
+clc
+%cwiczenie 2.1
+%przepisanie kodu
+%cwiczenie 2.2
+%trzeba wyklikaæ
+%cwiczenie 2.3
+%krzywa 1
+[x,y]=meshgrid(-pi:.1:pi);
+z=sin(x).*sin(y).*exp(-x.^2-y.^2);
+mesh(x,y,z);
+%krzywa 2
+[x,y]=meshgrid(-8:.1:8);
+z=sqrt(x.^2+y.^2);
+mesh(x,y,z);
+% 3
+[x,y]=meshgrid(-8:.1:8);
+z=sin(sqrt(x.^2+y.^2));
+mesh(x,y,z);
+% 4
+[x,y]=meshgrid(-8:.1:8);
+z=sin(sqrt(x.^2+y.^2))./x;
+mesh(x,y,z);
+% 5
+[x,y]=meshgrid(-2*pi:.1:2*pi);
+z=cos(x.*y);
+mesh(x,y,z);
+% 6
+[x,y]=meshgrid(-8:.1:8);
+z=exp(sin(x.^2+y.^2));
+mesh(x,y,z);
+% 7
+[x,y]=meshgrid(-8:.1:8);
+z=sin(x)+cos(y);
+mesh(x,y,z);
+mesh(x,y,z,x);
+mesh(x,y,z,y);
+mesh(x,y,z,z);
+meshc(x,y,z);
+surf(x,y,z);
+surfc(x,y,z);
+surfl(x,y,z);
+%cwiczenie 2.4
+t=linspace(0,10*pi,500);
+x=sin(t);y=cos(t);z=t;
+plot3(x,y,z);
+%cwiczenie 2.5
+ezsurf('real(atan(x+iy))')
+ezsurfc('real(atan(x+iy))')
+%druga krzywa z 2.5
+ezsurf('y/(1+x^2+y^2)')
+ezsurfc('y/(1+x^2+y^2)')
+diary off

@@ -1,0 +1,672 @@
+clc
+%cwiczenie 0.5.1
+t=1:1:100;
+t=11:11:1000;
+t=linspace(1,2,70);
+%cwiczenie 0.5.2
+a=[1 2 3];
+b=[4 5 6];
+a+b
+
+ans =
+
+     5     7     9
+
+a-b
+
+ans =
+
+    -3    -3    -3
+
+a*b
+{??? Error using ==>
+mtimes
+Inner matrix
+dimensions must
+agree.
+} 
+a/b
+
+ans =
+
+    0.4156
+
+a'
+
+ans =
+
+     1
+     2
+     3
+
+b'
+
+ans =
+
+     4
+     5
+     6
+
+sqrt(a)
+
+ans =
+
+  Columns 1 through 2
+
+    1.0000    1.4142
+
+  Column 3
+
+    1.7321
+
+sqrt(b)
+
+ans =
+
+  Columns 1 through 2
+
+    2.0000    2.2361
+
+  Column 3
+
+    2.4495
+
+a+b'
+{??? Error using ==>
+plus
+Matrix dimensions
+must agree.
+} 
+a*b
+{??? Error using ==>
+mtimes
+Inner matrix
+dimensions must
+agree.
+} 
+a*b'
+
+ans =
+
+    32
+
+a'*b
+
+ans =
+
+     4     5     6
+     8    10    12
+    12    15    18
+
+a'*b'
+{??? Error using ==>
+mtimes
+Inner matrix
+dimensions must
+agree.
+} 
+t=0:1:90;
+sin(t);
+cos(t);
+tan(t);
+x=1:1:100;
+n=1:1:100;
+1./n;
+1./(n.^2);
+1./sqrt(n);
+n.^(1./n)
+
+ans =
+
+  Columns 1 through 2
+
+    1.0000    1.4142
+
+  Columns 3 through 4
+
+    1.4422    1.4142
+
+  Columns 5 through 6
+
+    1.3797    1.3480
+
+  Columns 7 through 8
+
+    1.3205    1.2968
+
+  Columns 9 through 10
+
+    1.2765    1.2589
+
+  Columns 11 through 12
+
+    1.2436    1.2301
+
+  Columns 13 through 14
+
+    1.2181    1.2074
+
+  Columns 15 through 16
+
+    1.1979    1.1892
+
+  Columns 17 through 18
+
+    1.1814    1.1742
+
+  Columns 19 through 20
+
+    1.1676    1.1616
+
+  Columns 21 through 22
+
+    1.1560    1.1509
+
+  Columns 23 through 24
+
+    1.1461    1.1416
+
+  Columns 25 through 26
+
+    1.1374    1.1335
+
+  Columns 27 through 28
+
+    1.1298    1.1264
+
+  Columns 29 through 30
+
+    1.1231    1.1200
+
+  Columns 31 through 32
+
+    1.1171    1.1144
+
+  Columns 33 through 34
+
+    1.1118    1.1093
+
+  Columns 35 through 36
+
+    1.1069    1.1047
+
+  Columns 37 through 38
+
+    1.1025    1.1005
+
+  Columns 39 through 40
+
+    1.0985    1.0966
+
+  Columns 41 through 42
+
+    1.0948    1.0931
+
+  Columns 43 through 44
+
+    1.0914    1.0898
+
+  Columns 45 through 46
+
+    1.0883    1.0868
+
+  Columns 47 through 48
+
+    1.0854    1.0840
+
+  Columns 49 through 50
+
+    1.0827    1.0814
+
+  Columns 51 through 52
+
+    1.0801    1.0789
+
+  Columns 53 through 54
+
+    1.0778    1.0767
+
+  Columns 55 through 56
+
+    1.0756    1.0745
+
+  Columns 57 through 58
+
+    1.0735    1.0725
+
+  Columns 59 through 60
+
+    1.0716    1.0706
+
+  Columns 61 through 62
+
+    1.0697    1.0688
+
+  Columns 63 through 64
+
+    1.0680    1.0671
+
+  Columns 65 through 66
+
+    1.0663    1.0655
+
+  Columns 67 through 68
+
+    1.0648    1.0640
+
+  Columns 69 through 70
+
+    1.0633    1.0626
+
+  Columns 71 through 72
+
+    1.0619    1.0612
+
+  Columns 73 through 74
+
+    1.0605    1.0599
+
+  Columns 75 through 76
+
+    1.0593    1.0586
+
+  Columns 77 through 78
+
+    1.0580    1.0574
+
+  Columns 79 through 80
+
+    1.0569    1.0563
+
+  Columns 81 through 82
+
+    1.0558    1.0552
+
+  Columns 83 through 84
+
+    1.0547    1.0542
+
+  Columns 85 through 86
+
+    1.0537    1.0532
+
+  Columns 87 through 88
+
+    1.0527    1.0522
+
+  Columns 89 through 90
+
+    1.0517    1.0513
+
+  Columns 91 through 92
+
+    1.0508    1.0504
+
+  Columns 93 through 94
+
+    1.0499    1.0495
+
+  Columns 95 through 96
+
+    1.0491    1.0487
+
+  Columns 97 through 98
+
+    1.0483    1.0479
+
+  Columns 99 through 100
+
+    1.0475    1.0471
+
+(1+1./n).^n;
+(n.^3-2*n.^2+4)./(2*n.^3+n.^2+10*n+14);
+%cwiczenie 0.5.3
+i=1:1:20;
+sum(1./factorial(i))
+
+ans =
+
+    1.7183
+
+sum((2.^i)./(factorial(i)))
+
+ans =
+
+    6.3891
+
+i=1:1:40;
+sum((-1).^i./(factorial(2.*i+1)))
+
+ans =
+
+   -0.1585
+
+i=1:1:200;
+sum((-1).^i./i)
+
+ans =
+
+   -0.6907
+
+i=1:1:1000;
+sum(1./(i.^2))
+
+ans =
+
+    1.6439
+
+i=1:1:50;
+sum((i.^2)./(2.^i))
+
+ans =
+
+    6.0000
+
+clc
+%cwiczenie 0.6.1
+A=rand(7);
+A=round(10*rand(7))
+
+A =
+
+  Columns 1 through 3
+
+     8    10     7
+     3     3     9
+     7     6    10
+     7     2     5
+     2     8     1
+     1     3     1
+     5     5     3
+
+  Columns 4 through 6
+
+     8     3     9
+     3     6     3
+     8     5     8
+     2     4     8
+     9     8     4
+     3     6     6
+     2     5     1
+
+  Column 7
+
+     1
+     5
+     8
+     9
+     1
+     6
+     5
+
+A(3,4)
+
+ans =
+
+     8
+
+A(6,3)=pi;
+B=A(1:3,2:6);
+C=A(:,1:3);
+D=A(4:7,:);
+%cwiczenie 0.6.2
+D=A([1 3 5],[2 4]);
+E=A([1 2 1 4 1 5],:);
+F=A(logical([1 0 1 0 0 1 0]), logical([0 1 0 1 1 0 0]));
+%cwiczenie 0.6.4
+V=A(:);
+G=A(1:6,1:6);
+reshape(G,4,9);
+reshape(G,9,4);
+reshape(G,2,18);
+reshape(G,18,2);
+G1=reshape(G,4,9);
+G2=reshape(G,9,4);
+G1'==G2
+
+ans =
+
+  Columns 1 through 3
+
+     1     0     0
+     0     0     0
+     0     0     1
+     1     0     0
+     0     0     0
+     0     0     0
+     0     0     0
+     0     0     0
+     0     0     0
+
+  Column 4
+
+     0
+     0
+     0
+     0
+     1
+     0
+     0
+     0
+     1
+
+H=A;
+H(4,:)=[];
+H(2,:)=[];
+H(:,3)=[];
+%cwiczenie 0.6.5
+diag(1*ones(10,1),0)+diag(2*ones(9,1),1)+diag(2*ones(9,1),-1)+diag(3*ones(8,1),2)+diag(3*ones(8,1),-2)+diag(4*ones(7,1),3)+diag(4*ones(7,1),-3)+diag(5*ones(6,1),4)+diag(5*ones(6,1),-4)+diag(6*ones(5,1),5)+diag(6*ones(5,1),-5)+diag(7*ones(4,1),6)+diag(7*ones(4,1),-6)+diag(8*ones(3,1),7)+diag(8*ones(3,1),-7)+diag(9*ones(2,1),8)+diag(9*ones(2,1),-8)+diag(10*ones(1,1),9)+diag(10*ones(1,1),-9)
+
+ans =
+
+  Columns 1 through 7
+
+     1     2     3     4     5     6     7
+     2     1     2     3     4     5     6
+     3     2     1     2     3     4     5
+     4     3     2     1     2     3     4
+     5     4     3     2     1     2     3
+     6     5     4     3     2     1     2
+     7     6     5     4     3     2     1
+     8     7     6     5     4     3     2
+     9     8     7     6     5     4     3
+    10     9     8     7     6     5     4
+
+  Columns 8 through 10
+
+     8     9    10
+     7     8     9
+     6     7     8
+     5     6     7
+     4     5     6
+     3     4     5
+     2     3     4
+     1     2     3
+     2     1     2
+     3     2     1
+
+M=rand(4);
+N=rand(4);
+M*N
+
+ans =
+
+  Columns 1 through 2
+
+    0.8492    0.6001
+    0.9235    0.4107
+    0.7606    0.3798
+    1.9307    1.2869
+
+  Columns 3 through 4
+
+    0.8475    0.5542
+    1.0185    0.4768
+    0.8913    0.4422
+    1.8750    1.2329
+
+M.*N
+
+ans =
+
+  Columns 1 through 2
+
+    0.0018    0.0243
+    0.2784    0.2340
+    0.0873    0.0177
+    0.7912    0.5790
+
+  Columns 3 through 4
+
+    0.0012    0.0380
+    0.5069    0.0335
+    0.5633    0.0595
+    0.6499    0.7307
+
+%roznica wynika z tego ze M*N to mno¿enie macierzowe a M.*N mno¿y kazdy przez ka¿dy
+%stringi
+clc
+%0.7.2
+%cwiczenie 0.7.2
+a=char('ala','basia','celina','danuta','ewelina')
+
+a =
+
+ala    
+basia  
+celina 
+danuta 
+ewelina
+
+b=char('abacka','babacka','cabacka','dabacka','ebacka')
+
+b =
+
+abacka 
+babacka
+cabacka
+dabacka
+ebacka 
+
+a(:,1)=upper(a(:,1))
+
+a =
+
+Ala    
+Basia  
+Celina 
+Danuta 
+Ewelina
+
+b(:,1)=upper(b(:,1))
+
+b =
+
+Abacka 
+Babacka
+Cabacka
+Dabacka
+Ebacka 
+
+strcat(a,b)
+
+ans =
+
+AlaAbacka    
+BasiaBabacka 
+CelinaCabacka
+DanutaDabacka
+EwelinaEbacka
+
+%sort po pierwszej kolumnie, kiepskie imiona wybra³em do tego
+sortrows(strcat(a,b),1)
+
+ans =
+
+AlaAbacka    
+BasiaBabacka 
+CelinaCabacka
+DanutaDabacka
+EwelinaEbacka
+
+%sort po drugiej
+sortrows(strcat(a,b),2)
+
+ans =
+
+BasiaBabacka 
+DanutaDabacka
+CelinaCabacka
+AlaAbacka    
+EwelinaEbacka
+
+%sort po pierwszej malej¹co
+sortrows(strcat(a,b),-1)
+
+ans =
+
+EwelinaEbacka
+DanutaDabacka
+CelinaCabacka
+BasiaBabacka 
+AlaAbacka    
+
+clc
+%cwiczenie 0.7.4
+
+a=input('rownanie ax^2+bx+c=0 podaj a=');b=input('b=');c=input('c=');
+rownanie ax^2+bx+c=0 podaj a=6
+b=3
+c=2
+c*c
+
+ans =
+
+     4
+
+dlt = b^2-4*a*c;x1 = (-b-sqrt(dlt))/(2*a);x2 = (-b+sqrt(dlt))/(2*a);disp(['x1=' num2str(x1) ' a x2=' num2str(x2)]);
+x1=-0.25-0.52042i a x2=-0.25+0.52042i
+clc
+clear
+%cwiczenie 0.8.1
+plot(1,1,'x',3,3,'o',0,7,'x',-1,-pi,'o')
+%cwiczenie 0.8.2
+clc
+x=[1 3 0 -1];
+y=[1 3 7 -pi];
+plot(x,y)
+x=[0 4 4 0];
+y=[0 0 4 4 0];
+x=[ 0 4 4 0 0];
+plot(x,y)
+N=9;a=linspace(0,2*pi,N+1);r=4;phi=pi/4;x=r*cos(a+phi);y=r*sin(a+phi);plot(x,y)
+N=4;a=linspace(0,2*pi,N+1);r=4;phi=pi/4;x=r*cos(a+phi);y=r*sin(a+phi);plot(x,y)
+N=4;a=linspace(0,2*pi,N+1);r=2;phi=pi/4;x=r*cos(a+phi);y=r*sin(a+phi);plot(x,y)
+%cwiczenie 0.8.3
+x=linspace(0,2*pi,200);
+plot(x,sin(x))
+plot(x,cos(x))
+x=linspace(-1,1,100);
+plot(x,acos(x))
+x=linspace(-5,5);
+plot(x,x.^2.*log(x))
+{Warning: Imaginary
+parts of complex X
+and/or Y arguments
+ignored} 
+title('x^2*log(x)')
+xlabel('oœ x')
+ylabel('oœ y')
+%cwiczenie 0.8.4
+clc
+t=linspace(0,2*pi);
+x=5*cos(t);
+y=5*sin(t);
+plot(x,y)
+%równanie okrêgu w postaci parametrycznej
+% https://pl.wikipedia.org/wiki/R%C3%B3wnanie_parametryczne
+x=cos(t).^3;
+y=sin(t).^3;
+plot(x,y)
+%cwiczenie 0.8.5 pomijamy
+diary off
